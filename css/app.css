@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+ol,
+menu {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/***************************
+DEBUG RULES
+***************************/
+
+.debug .container {
+    border: 4px dashed black;
+    background-color: aqua;
+}
+
+.debug .screen__buttons {
+    border: 3px solid purple;
+    min-height: 20px;
+    margin: 0 auto;
+}
+
+.debug .section__users {
+    border: 3px solid red;
+    margin: 0 auto;
+    padding: 90px 80px 10px 80px;
+}
+
+.debug .section__user__utilities {
+    border: 3px solid blue;
+    margin: 0 auto;
+}
+
+.debug .user__row {
+    border: 3px dotted green;
+    margin: 0 auto;
+}
+
+/***************************
+DEBUG RULES
+***************************/
+
+/***************************
+section1 rules
+***************************/
+.container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.section__users {
+    position: relative;
+}
+
+.screen__features {
+    text-align: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.user__row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.user__col {
+    flex-basis: calc(100% * (1 / 7));
+    border: 1px dotted yellow;
+    width: 250px;
+    padding: 0 2.5px;
+    background-color: green;
+    position: relative;
+}
+
+.user__name {
+    border: 2px dotted black;
+    position: absolute;
+    color: white;
+    left: 0;
+    bottom: 0;
+    background-color: rgba(128, 128, 128, 0.329);
+}
+
+/***************************
+section2 rules
+***************************/
+
+.utilities__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.utilities__col__1 {
+    flex-basis: calc(100% * (3 / 12));
+}
+
+.utilities__col__2 {
+    flex-basis: calc(100% * (6 / 12));
+}
+
+.utilities__col__3 {
+    flex-basis: calc(100% * (3 / 12));
+}
