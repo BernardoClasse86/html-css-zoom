@@ -19,8 +19,8 @@ DEBUG RULES
 ***************************/
 
 .debug .container {
-    border: 4px dashed black;
-    background-color: aqua;
+    /* border: 4px dashed black;
+    background-color: aqua; */
 }
 
 .debug .screen__buttons {
@@ -30,8 +30,8 @@ DEBUG RULES
 }
 
 .debug .section__users {
-    border: 3px solid red;
-    margin: 0 auto;
+    /* border: 3px solid red;
+    margin: 0 auto; */
     padding: 90px 80px 10px 80px;
 }
 
@@ -41,8 +41,8 @@ DEBUG RULES
 }
 
 .debug .user__row {
-    border: 3px dotted green;
-    margin: 0 auto;
+    /* border: 3px dotted green;
+    margin: 0 auto; */
 }
 
 /***************************
@@ -52,21 +52,39 @@ DEBUG RULES
 /***************************
 section1 rules
 ***************************/
+
 .container {
-    width: 100vw;
     height: 100vh;
+    width: 100vw;
     position: relative;
+    background-color: black;
 }
 
 .section__users {
     position: relative;
+    background-color: inherit;
+    padding: 80px 90px 30px 90px;
 }
 
 .screen__features {
     text-align: end;
     position: absolute;
-    top: 0;
+    top: 5px;
     right: 0;
+    color: white;
+}
+
+.speaker {
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.329);
+}
+
+.fullscreen {
+    padding: 5px;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.329);
 }
 
 .user__row {
@@ -76,19 +94,17 @@ section1 rules
 
 .user__col {
     flex-basis: calc(100% * (1 / 7));
-    border: 1px dotted yellow;
-    width: 250px;
-    padding: 0 2.5px;
-    background-color: green;
+    padding: 5px 2.5px;
     position: relative;
+    font-size: 14px;
 }
 
 .user__name {
-    border: 2px dotted black;
+    /* border: 2px dotted black; */
     position: absolute;
     color: white;
-    left: 0;
-    bottom: 0;
+    left: 2;
+    bottom: 8px;
     background-color: rgba(128, 128, 128, 0.329);
 }
 
